@@ -1,1 +1,7 @@
-<p>workout-list works!</p>
+<ul>
+  <li *ngFor="let workout of storageService.workouts">
+    <span *ngIf="workout.done">Done</span>
+
+    <span>{{ workout.name }}</span>
+  </li>
+</ul>

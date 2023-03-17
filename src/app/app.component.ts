@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { VirtualSotageService } from './services/virtual-sotage.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'fitness-tracker';
+
+  constructor(
+    public serviceStorage: VirtualSotageService
+  ) { }
+
+  nextWorkout() {
+    this.serviceStorage.nextWorkout()
+  }
 }
