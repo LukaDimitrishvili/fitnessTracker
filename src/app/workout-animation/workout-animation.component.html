@@ -1,1 +1,10 @@
-<img src="{{ storageService.activeWorkout?.image }}" />
+<img
+  *ngIf="!storageService.isWorkoutDone()"
+  class="object-contain h-80 w-80"
+  src="{{ storageService.activeWorkout?.image }}"
+/>
+<img
+  *ngIf="storageService.isWorkoutDone()"
+  class="object-contain h-80 w-80"
+  src="/assets/images/done.jpg"
+/>
