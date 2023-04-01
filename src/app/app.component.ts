@@ -9,11 +9,5 @@ import { VirtualSotageService } from './services/virtual-sotage.service';
 export class AppComponent {
   title = 'fitness-tracker';
 
-  constructor(
-    public serviceStorage: VirtualSotageService
-  ) { }
 
-  nextWorkout() {
-    this.serviceStorage.nextWorkout()
-  }
 }

@@ -1,0 +1,5 @@
+<input (ngModelChange)="onSearch($event)" [(ngModel)]="searchtext" />
+
+<div *ngFor="let workout of result">
+  {{ workout.name }}
+</div>

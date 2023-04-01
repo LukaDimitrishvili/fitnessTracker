@@ -11,6 +11,10 @@ import { WorkoutAnimationComponent } from './workout-animation/workout-animation
 import { TimerComponent } from './timer/timer.component';
 import { CaloriesComponent } from './calories/calories.component';
 import { WorkoutDescriptionComponent } from './workout-description/workout-description.component';
+import { WorkoutComponent } from './pages/workout/workout.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,11 +25,15 @@ import { WorkoutDescriptionComponent } from './workout-description/workout-descr
     WorkoutAnimationComponent,
     TimerComponent,
     CaloriesComponent,
-    WorkoutDescriptionComponent
+    WorkoutDescriptionComponent,
+    WorkoutComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

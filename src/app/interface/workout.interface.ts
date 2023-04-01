@@ -7,3 +7,12 @@ export interface Workout {
     done: boolean,
     id: number,
 }
+
+export interface SearchedWorkout {
+    difficulty: string,
+    equipment: string,
+    instructions: string,
+    muscle: string,
+    name: string,
+    type: string,
+}
