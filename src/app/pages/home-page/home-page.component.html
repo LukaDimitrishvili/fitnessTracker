@@ -1,5 +1,15 @@
-<input (ngModelChange)="onSearch($event)" [(ngModel)]="searchtext" />
+<input
+  class="ml-3"
+  (ngModelChange)="onSearch($event)"
+  [(ngModel)]="searchtext"
+/>
 
-<div *ngFor="let workout of result">
-  {{ workout.name }}
+<div class="flex justify-evenly">
+  <div *ngFor="let workout of result">
+    <div>{{ workout.name }}</div>
+    <div>{{ workout.equipment }}</div>
+  </div>
+  <div *ngFor="let workout of result">
+    {{ workout.muscle }}
+  </div>
 </div>

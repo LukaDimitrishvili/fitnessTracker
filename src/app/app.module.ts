@@ -15,6 +15,8 @@ import { WorkoutComponent } from './pages/workout/workout.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { SignInComponent } from './pages/sign-in/sign-in.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,13 +29,15 @@ import { FormsModule } from '@angular/forms';
     CaloriesComponent,
     WorkoutDescriptionComponent,
     WorkoutComponent,
-    HomePageComponent
+    HomePageComponent,
+    SignInComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
