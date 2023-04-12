@@ -17,6 +17,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { SignInComponent } from './pages/sign-in/sign-in.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { LandingComponent } from './pages/landing/landing.component';
+import { ExerciseComponent } from './pages/exercise/exercise.component';
+import { PricingComponent } from './pages/pricing/pricing.component';
+import { RegisterComponent } from './pages/register/register.component';
+
 
 @NgModule({
   declarations: [
@@ -31,13 +41,24 @@ import { ReactiveFormsModule } from '@angular/forms';
     WorkoutComponent,
     HomePageComponent,
     SignInComponent,
+    LandingComponent,
+    ExerciseComponent,
+    PricingComponent,
+    RegisterComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatIconModule,
+    MatInputModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

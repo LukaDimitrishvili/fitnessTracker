@@ -1,0 +1,20 @@
+<div class="flex">
+  <input
+    class="ml-3 border border-gray-200 rounded dark:border-gray-700"
+    (ngModelChange)="onSearch($event)"
+    [(ngModel)]="searchtext"
+  />
+</div>
+
+<div class="flex">
+  <div class="w-80" *ngFor="let workout of result">
+    <div>{{ workout.name }}</div>
+    <div>{{ workout.equipment }}</div>
+    <div>{{ workout.muscle }}</div>
+    <div>{{ workout.type }}</div>
+    <div>{{ workout.difficulty }}</div>
+  </div>
+</div>
+<div *ngFor="let workout of result">
+  <div>{{ workout.instructions }}</div>
+</div>

@@ -9,6 +9,8 @@ import { AuthService } from 'src/app/services/auth.service';
 })
 export class SignInComponent {
 
+  hide = true;
+
   signIn = new FormGroup({
 
     name: new FormControl('', [Validators.required]),
@@ -25,4 +27,6 @@ export class SignInComponent {
 
   }
 
+
 }
+
