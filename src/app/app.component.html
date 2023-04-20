@@ -1,23 +1,80 @@
-<!-- <app-header></app-header>
-<app-calories></app-calories>
-<app-timer></app-timer>
-<app-workout-animation></app-workout-animation>
-<app-workout-description></app-workout-description>
-<app-workout-list></app-workout-list>
-<button (click)="nextWorkout()">next workout</button> -->
-
 <header class="flex justify-between text-2xl px-2">
-  <div><app-user> </app-user></div>
+  <div
+    class="mt-3 font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700"
+  >
+    <app-user> </app-user>
+  </div>
   <div class="flex">
-    <div class="ml-3"><a routerLink="home-page">Home</a></div>
-    <div class="ml-3"><a routerLink="workout">Workout</a></div>
-    <div class="ml-3"><a routerLink="exercise">Excercise</a></div>
-    <div class="ml-3"><a routerLink="pricing">Pricing</a></div>
+    <div
+      class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700"
+    >
+      <ul class="flex flex-wrap -mb-px">
+        <li class="mr-2">
+          <a
+            routerLink="home-page"
+            class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+            routerLinkActive="text-blue-600 border-b-2 border-blue-600  dark:text-blue-500 dark:border-blue-500 active"
+            >Home</a
+          >
+        </li>
+        <li class="mr-2">
+          <a
+            routerLink="workout"
+            class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+            routerLinkActive="text-blue-600 border-b-2 border-blue-600  dark:text-blue-500 dark:border-blue-500 active"
+            >Workout</a
+          >
+        </li>
+        <li class="mr-2">
+          <a
+            routerLink="explore"
+            class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+            routerLinkActive="text-blue-600 border-b-2 border-blue-600  dark:text-blue-500 dark:border-blue-500 active"
+            >Explore</a
+          >
+        </li>
+        <li class="mr-2">
+          <a
+            routerLink="pricing"
+            class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+            routerLinkActive="text-blue-600 border-b-2 border-blue-600  dark:text-blue-500 dark:border-blue-500 active"
+            >Pricing</a
+          >
+        </li>
+      </ul>
+    </div>
   </div>
 
-  <div class="flex">
-    <div class="ml-3"><a routerLink="sign-in">Log In</a></div>
-    <div class="ml-3"><a routerLink="register">Register</a></div>
+  <div
+    class="flex text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700"
+  >
+    <ng-container *ngIf="!authService.isUserLoggedIn()">
+      <div class="ml-3">
+        <a
+          routerLink="sign-in"
+          class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+          routerLinkActive="text-blue-600 border-b-2 border-blue-600  dark:text-blue-500 dark:border-blue-500 active"
+          >Log In</a
+        >
+      </div>
+      <div class="ml-3">
+        <a
+          routerLink="register"
+          class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+          routerLinkActive="text-blue-600 border-b-2 border-blue-600  dark:text-blue-500 dark:border-blue-500 active"
+          >Register</a
+        >
+      </div>
+    </ng-container>
+    <ng-container *ngIf="authService.isUserLoggedIn()">
+      <button
+        (click)="onLogOut()"
+        type="button"
+        class="text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900"
+      >
+        Log Out
+      </button>
+    </ng-container>
   </div>
 </header>
 

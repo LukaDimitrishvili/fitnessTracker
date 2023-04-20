@@ -1,0 +1,85 @@
+{
+    "muscleTypes": [
+      {
+        "id": 1,
+        "name": "Chest"
+      },
+      {
+        "id": 2,
+        "name": "Back"
+      },
+      {
+        "id": 3,
+        "name": "Shoulders"
+      },
+      {
+        "id": 4,
+        "name": "Biceps"
+      },
+      {
+        "id": 5,
+        "name": "Triceps"
+      },
+      {
+        "id": 6,
+        "name": "Legs"
+      }
+    ],
+    "workouts": [
+      {
+        "id": 1,
+        "name": "Push-ups",
+        "description": "A classic bodyweight exercise that targets the chest, shoulders, and triceps.",
+        "category": 1
+      },
+      {
+        "id": 2,
+        "name": "Bench press",
+        "description": "A compound exercise that targets the chest, shoulders, and triceps using a barbell.",
+        "category": 1
+      },
+      {
+        "id": 3,
+        "name": "Pull-ups",
+        "description": "A bodyweight exercise that targets the back and biceps.",
+        "category": 2
+      },
+      {
+        "id": 4,
+        "name": "Deadlifts",
+        "description": "A compound exercise that targets the back, legs, and core using a barbell.",
+        "category": 2
+      },
+      {
+        "id": 5,
+        "name": "Shoulder press",
+        "description": "A compound exercise that targets the shoulders using dumbbells or a barbell.",
+        "category": 3
+      },
+      {
+        "id": 6,
+        "name": "Bicep curls",
+        "description": "An isolation exercise that targets the biceps using dumbbells or a barbell.",
+        "category": 4
+      },
+      {
+        "id": 7,
+        "name": "Tricep dips",
+        "description": "A bodyweight exercise that targets the triceps using parallel bars or a bench.",
+        "category": 5
+      },
+      {
+        "id": 8,
+        "name": "Squats",
+        "description": "A compound exercise that targets the legs and core using a barbell.",
+        "category": 6
+      },
+      {
+        "id": 9,
+        "name": "Lunges",
+        "description": "A unilateral exercise that targets the legs using bodyweight or dumbbells.",
+        "category": 6
+      }
+    ]
+  }
+  

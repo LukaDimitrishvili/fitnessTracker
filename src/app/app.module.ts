@@ -26,6 +26,8 @@ import { LandingComponent } from './pages/landing/landing.component';
 import { ExerciseComponent } from './pages/exercise/exercise.component';
 import { PricingComponent } from './pages/pricing/pricing.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { ExploreComponent } from './pages/explore/explore.component';
+import { MatSelectModule } from '@angular/material/select';
 
 
 @NgModule({
@@ -45,6 +47,7 @@ import { RegisterComponent } from './pages/register/register.component';
     ExerciseComponent,
     PricingComponent,
     RegisterComponent,
+    ExploreComponent,
 
   ],
   imports: [
@@ -57,7 +60,8 @@ import { RegisterComponent } from './pages/register/register.component';
     MatButtonModule,
     MatFormFieldModule,
     MatIconModule,
-    MatInputModule
+    MatInputModule,
+    MatSelectModule,
 
   ],
   providers: [],

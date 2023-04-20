@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './auth.guard';
 import { ExerciseComponent } from './pages/exercise/exercise.component';
+import { ExploreComponent } from './pages/explore/explore.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { PricingComponent } from './pages/pricing/pricing.component';
 import { RegisterComponent } from './pages/register/register.component';
@@ -23,8 +24,8 @@ const routes: Routes = [{
 },
 
 {
-  path: 'exercise',
-  component: ExerciseComponent
+  path: 'explore',
+  component: ExploreComponent
 },
 {
   path: 'pricing',
