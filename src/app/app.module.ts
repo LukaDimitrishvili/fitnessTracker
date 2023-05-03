@@ -28,6 +28,8 @@ import { PricingComponent } from './pages/pricing/pricing.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { ExploreComponent } from './pages/explore/explore.component';
 import { MatSelectModule } from '@angular/material/select';
+import { MatCardModule } from '@angular/material/card';
+import { ExploreDetailsComponent } from './pages/explore-details/explore-details.component';
 
 
 @NgModule({
@@ -48,6 +50,7 @@ import { MatSelectModule } from '@angular/material/select';
     PricingComponent,
     RegisterComponent,
     ExploreComponent,
+    ExploreDetailsComponent,
 
   ],
   imports: [
@@ -62,7 +65,7 @@ import { MatSelectModule } from '@angular/material/select';
     MatIconModule,
     MatInputModule,
     MatSelectModule,
-
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

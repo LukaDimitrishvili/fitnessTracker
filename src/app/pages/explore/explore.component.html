@@ -1,12 +1,43 @@
-<mat-form-field appearance="fill">
-  <mat-label>Muscle</mat-label>
-  <mat-select>
-    <mat-option *ngFor="let muscleType of muscleTypes" [value]="muscleType.id">
-      {{ muscleType.name }}
-    </mat-option>
-  </mat-select>
-</mat-form-field>
+<div class="flex justify-center">
+  <mat-form-field appearance="fill" class="m-auto">
+    <mat-label>Muscle</mat-label>
+    <mat-select [formControl]="myControl">
+      <mat-option
+        *ngFor="let muscleType of muscleTypes"
+        [value]="muscleType.id"
+      >
+        {{ muscleType.name }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
 
-<div *ngFor="let workout of workouts">
-  {{ workout.description }}
+<div>
+  <a
+    *ngFor="let workout of workouts"
+    class="m-auto block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100"
+  >
+    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+      {{ workout.name }}
+    </h5>
+    <p class="font-normal text-gray-700">
+      {{ workout.description }}
+    </p>
+    <div>
+      <button
+        (click)="addFav(workout)"
+        type="button"
+        class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200"
+      >
+        Add to Favourites
+      </button>
+      <button
+        [routerLink]="'/explore/details/' + workout.id"
+        type="button"
+        class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2"
+      >
+        See details
+      </button>
+    </div>
+  </a>
 </div>

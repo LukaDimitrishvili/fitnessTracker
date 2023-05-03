@@ -15,4 +15,8 @@ export class ExploreService {
     const url = 'http://localhost:3000/workouts'
     return this.http.get(url)
   }
+  getWorkoutByMuscle(muscleType: number) {
+    const url = 'http://localhost:3000/workouts?category=' + muscleType
+    return this.http.get(url)
+  }
 }

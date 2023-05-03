@@ -30,55 +30,66 @@
         "id": 1,
         "name": "Push-ups",
         "description": "A classic bodyweight exercise that targets the chest, shoulders, and triceps.",
-        "category": 1
+        "category": 1,
+        "img": "https://cdn.mos.cms.futurecdn.net/oYDbf5hQAePHEBNZTQMXRA.jpg"
       },
       {
         "id": 2,
         "name": "Bench press",
         "description": "A compound exercise that targets the chest, shoulders, and triceps using a barbell.",
-        "category": 1
+        "category": 1,
+        "img": "https://ix-cdn.b2e5.com/images/41628/41628_e731cbd2d6834db6abfd90d944b18ba4_1653409458.jpeg"
+        
       },
       {
         "id": 3,
         "name": "Pull-ups",
         "description": "A bodyweight exercise that targets the back and biceps.",
-        "category": 2
+        "category": 2,
+        "img": "https://onnitacademy.imgix.net/2016/02/pullups.png"
+
       },
       {
         "id": 4,
         "name": "Deadlifts",
         "description": "A compound exercise that targets the back, legs, and core using a barbell.",
-        "category": 2
+        "category": 2,
+        "img": "https://static.strengthlevel.com/images/illustrations/deadlift-1000x1000.jpg"
       },
       {
         "id": 5,
         "name": "Shoulder press",
         "description": "A compound exercise that targets the shoulders using dumbbells or a barbell.",
-        "category": 3
+        "category": 3,
+        "img": "https://static.strengthlevel.com/images/illustrations/dumbbell-shoulder-press-1000x1000.jpg"
       },
       {
         "id": 6,
         "name": "Bicep curls",
         "description": "An isolation exercise that targets the biceps using dumbbells or a barbell.",
-        "category": 4
+        "category": 4,
+        "img": "https://www.inspireusafoundation.org/wp-content/uploads/2023/01/inner-bicep-curl-muscles.png"
       },
       {
         "id": 7,
         "name": "Tricep dips",
         "description": "A bodyweight exercise that targets the triceps using parallel bars or a bench.",
-        "category": 5
+        "category": 5,
+        "img": "https://qph.cf2.quoracdn.net/main-qimg-cf2058c891a58de973cc146af500a09e-lq"
       },
       {
         "id": 8,
         "name": "Squats",
         "description": "A compound exercise that targets the legs and core using a barbell.",
-        "category": 6
+        "category": 6,
+        "img": "https://www.inspireusafoundation.org/wp-content/uploads/2022/06/the-barbell-squat.jpg"
       },
       {
         "id": 9,
         "name": "Lunges",
         "description": "A unilateral exercise that targets the legs using bodyweight or dumbbells.",
-        "category": 6
+        "category": 6,
+        "img": "https://www.inspireusafoundation.org/wp-content/uploads/2022/04/bodyweight-lunge-1024x637.png"
       }
     ]
   }

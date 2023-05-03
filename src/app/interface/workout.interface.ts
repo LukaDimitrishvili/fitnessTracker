@@ -16,3 +16,4 @@ export interface SearchedWorkout {
     name: string,
     type: string,
 }
+

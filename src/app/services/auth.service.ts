@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { tap } from 'rxjs';
+import { User } from '../interface/user.interface';
 import { AuthHttpService } from './auth.http.service';
 
 @Injectable({
@@ -8,12 +9,31 @@ import { AuthHttpService } from './auth.http.service';
 export class AuthService {
 
   loggedInStatus: boolean = false;
+  userInfo?: User;
 
-  constructor(private authHttp: AuthHttpService) { }
+  constructor(private authHttp: AuthHttpService) {
+    this.checkForUser();
+  }
+
+  checkForUser(): void {
+    const user = localStorage.getItem('userInfo');
+    if (user) {
+      this.loggedInStatus = true;
+      this.userInfo = JSON.parse(user)
+    }
+  }
+
 
   login(username: string, password: string) {
     return this.authHttp.signIn({ username, password }).pipe(
-      tap(() => this.loggedInStatus = true)
+      tap((log: any) => {
+        if (log) {
+          this.userInfo = log;
+          this.loggedInStatus = true;
+          localStorage.setItem('userInfo', JSON.stringify(this.userInfo))
+        }
+
+      })
     )
 
   }
@@ -23,5 +43,7 @@ export class AuthService {
   }
   logout() {
     this.loggedInStatus = false;
+    this.userInfo = undefined;
+    localStorage.clear();
   }
 }
