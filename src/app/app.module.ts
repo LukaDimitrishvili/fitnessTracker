@@ -22,7 +22,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
-import { LandingComponent } from './pages/landing/landing.component';
 import { ExerciseComponent } from './pages/exercise/exercise.component';
 import { PricingComponent } from './pages/pricing/pricing.component';
 import { RegisterComponent } from './pages/register/register.component';
@@ -45,7 +44,6 @@ import { ExploreDetailsComponent } from './pages/explore-details/explore-details
     WorkoutComponent,
     HomePageComponent,
     SignInComponent,
-    LandingComponent,
     ExerciseComponent,
     PricingComponent,
     RegisterComponent,

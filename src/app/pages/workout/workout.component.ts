@@ -13,9 +13,9 @@ export class WorkoutComponent {
     public addFavourites: FavouriteService
   ) { }
 
-  nextWorkout() {
-    this.serviceStorage.nextWorkout()
-  }
+  // nextWorkout() {
+  //   this.serviceStorage.nextWorkout()
+  // }
   delete(workout: any) {
     this.addFavourites.delete(workout.id)
   }
